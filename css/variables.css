@@ -1,0 +1,18 @@
+
+:root{
+
+   /* Font Family */
+   --title-font: 'Minecraft Ten';
+   --text-font: 'MinecraftSeven';
+
+   /* Color */
+   --btn-text: #DDD;
+   --btn-text-hover:#FFFFA0;
+   --title-text:#D0C5C0;
+   --title-shading: #3D3938;
+
+
+   /* Background */
+   --btn-background:#6F6F6F;
+   --btn-hover:rgba(100, 100, 255, .45);
+}
