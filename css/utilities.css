@@ -1,0 +1,29 @@
+#hide {
+  display: none;
+}
+
+/* Intro Buttons */
+.intro-button {
+  width: 35rem;
+  height: 3.5rem;
+  padding: 0.1rem 0;
+  font-size: 1.4rem;
+  color: var(--btn-text);
+  background-image: url(/assets/images/button/button.png);
+  border-color: #aaa #565656 #565656 #aaa;
+  text-shadow: 3px 3px #4c4c4c;
+  outline: 2px solid black;
+  font-family: var(--text-font);
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.intro-button:hover {
+  background-image: url(/assets/images/button/hover.png);
+  text-shadow: 2px 2px #202013cc;
+  color: var(--btn-text-hover);
+}

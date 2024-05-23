@@ -1,0 +1,11 @@
+
+/* Title */
+@font-face {
+   font-family: 'Minecraft Ten';
+   src: url('/assets/fonts/minecraftTen.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'MinecraftSeven';
+   src: url('/assets/fonts/MinecraftSeven.ttf') format('truetype');
+}
