@@ -73,12 +73,12 @@
   opacity: 1;
 }
 
-/* Change to class for dom manipulation*/
-.tool:hover {
+.selected-tool{
   width: 4.5rem;
   height: 4.5rem;
   box-shadow: inset -1px -1px 0px rgba(55, 55, 55, 0.7),
     inset 1px 1px 0px #ffffff;
+    opacity: 1;
 }
 
 

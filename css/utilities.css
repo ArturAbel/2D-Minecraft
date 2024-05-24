@@ -1,5 +1,14 @@
-.sword {
+.sword-cursor{
   cursor: url("/assets/cursor/cursor.cur") 0 0, pointer;
+}
+.axe-cursor{
+  cursor: url("/assets/cursor/axe.cur") 0 0, pointer;
+}
+.pickaxe-cursor{
+  cursor: url("/assets/cursor/pickaxe.cur") 0 0, pointer;
+}
+.shovel-cursor{
+  cursor: url("/assets/cursor/shovel.cur") 0 0, pointer;
 }
 
 /* Intro Buttons */

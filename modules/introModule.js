@@ -1,12 +1,12 @@
-import { GameModule } from "./game.Module.js";
-
+import { GameModule } from "./gameModule.js";
+import{ introContainer, introTitle, startButton, resetButton} from "./domElements.js";
 
 export class IntroModule{
    constructor(){
-      this.introContainer = document.querySelector('.intro-container');
-      this.introTitle = document.querySelector('.intro-title');
-      this.startButton = document.querySelector('.start-button');
-      this.resetButton = document.querySelector('#reset-button');
+      this.introContainer = introContainer;
+      this.introTitle = introTitle;
+      this.startButton = startButton;
+      this.resetButton = resetButton;
    }
    init(){
       this.startButton.addEventListener('click', () => this.startGame());
