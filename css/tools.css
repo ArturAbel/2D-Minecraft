@@ -1,0 +1,126 @@
+.tools-container {
+   width: 24rem;
+   height: 6.5rem;
+   margin-right: 15rem;
+   margin-bottom: 2rem;
+   background: var(--toolbar-outer);
+   box-shadow: 4px 3px 0px rgba(55, 55, 55, 0.8), inset 2px 3px 0px #fefefe,
+   rgba(14, 30, 37, 0.12) -2px 2px 4px 0px,
+   rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+ }
+
+.item {
+  width: 4rem;
+  height: 4rem;
+  background-position: center;
+}
+/* Chest */
+#chest {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1.4rem;
+  margin-right: 0.5rem;
+}
+
+.closed{
+   background-image: url("/assets/images/chest/chest/close-chest.gif");
+   background-size: cover;
+ }
+
+.open{
+   background-image: url("/assets/images/chest/chest/open-chest.gif");
+   background-size: cover;
+}
+
+#chest:hover {
+  transform: scale(1.1);
+}
+/* Shovel */
+#shovel {
+  background-image: url("/assets/images/items/shovel.png");
+  background-size: cover;
+  opacity: 0.6;
+}
+/* Pickaxe */
+#pickaxe {
+  background-image: url("/assets/images/items/pickaxe.png");
+  background-size: cover;
+  opacity: 0.6;
+}
+/* Wood axe */
+#axe {
+  background-image: url("/assets/images/items/axe.png");
+  background-size: cover;
+  opacity: 0.6;
+}
+/* Spyglass */
+#spyglass {
+  background-image: url("/assets/images/items/spyglass.png");
+  background-size: cover;
+  opacity: 0.6;
+}
+
+#shovel:hover,
+#pickaxe:hover,
+#axe:hover,
+#spyglass:hover {
+  opacity: 1;
+}
+
+/* Change to class for dom manipulation*/
+.tool:hover {
+  width: 4.5rem;
+  height: 4.5rem;
+  box-shadow: inset -1px -1px 0px rgba(55, 55, 55, 0.7),
+    inset 1px 1px 0px #ffffff;
+}
+
+
+/* Tools Chest Block Holders */
+.grass-holder{
+   width: 3.5rem;
+   height: 3.5rem;
+   background-image: url("/assets/images/chest/blocks/grass.png");
+   background-size: cover;
+}
+
+.soil-holder{
+   width: 3.5rem;
+   height: 3.5rem;
+   background-image: url("/assets/images/chest/blocks/soil.png");
+   background-size: cover;
+}
+
+.stone-holder{
+   width: 3.5rem;
+   height: 3.5rem;
+   background-image: url("/assets/images/chest/blocks/stone.png");
+   background-size: cover;
+}
+
+.wood-holder{
+   width: 3.5rem;
+   height: 3.5rem;
+   background-image: url("/assets/images/chest/blocks/wood.png");
+   background-size: cover;
+}
+
+.gold-holder{
+   width: 3.5rem;
+   height: 3.5rem;
+   background-image: url("/assets/images/chest/blocks/gold.png");
+   background-size: cover;
+}
+
+.silver-holder{
+   width: 3.5rem;
+   height: 3.5rem;
+   background-image: url("/assets/images/chest/blocks/silver.png");
+   background-size: cover;
+}

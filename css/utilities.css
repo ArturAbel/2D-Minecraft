@@ -1,9 +1,9 @@
-#hide {
-  display: none;
+.sword {
+  cursor: url("/assets/cursor/cursor.cur") 0 0, pointer;
 }
 
 /* Intro Buttons */
-.intro-button {
+.button {
   width: 35rem;
   height: 3.5rem;
   padding: 0.1rem 0;
@@ -22,8 +22,45 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
-.intro-button:hover {
+.button:hover {
   background-image: url(/assets/images/button/hover.png);
   text-shadow: 2px 2px #202013cc;
   color: var(--btn-text-hover);
+}
+
+/* Tool Holder */
+.tool {
+  width: 4.4rem;
+  height: 4.4rem;
+  background: var(--toolbar-inner);
+  box-shadow: inset 1.5px 1.5px 0px rgba(55, 55, 55, 0.8),
+    inset -2px -2px 0px #ffffff;
+}
+
+/* Block Holder */
+
+.blocks-holder{
+  width: 4.4rem;
+  height: 4.4rem;
+  background: var(--toolbar-inner);
+  box-shadow: inset 1.5px 1.5px 0px rgba(55, 55, 55, 0.8),
+    inset -2px -2px 0px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Change to class later */
+.blocks-holder:hover{
+  width: 4.5rem;
+  height: 4rem;
+  box-shadow: inset -1px -1px 0px rgba(55, 55, 55, 0.7),
+    inset 1px 1px 0px #ffffff;
+}
+
+
+.counter{
+  font-size: 1.1rem;
+  color: black;
+  padding-top: 3rem;
 }
