@@ -1,18 +1,27 @@
 
 :root{
 
-   /* Font Family */
+   /* Font Families */
    --title-font: 'Minecraft Ten';
    --text-font: 'MinecraftSeven';
 
-   /* Color */
+   /* Colors */
    --btn-text: #DDD;
    --btn-text-hover:#FFFFA0;
    --title-text:#D0C5C0;
    --title-shading: #3D3938;
 
+   /* Backgrounds */
+   --toolbar-outer:rgba(198, 198, 198, 0.5);
+   --toolbar-inner: rgba(139, 139, 139, 0.2);
 
-   /* Background */
-   --btn-background:#6F6F6F;
-   --btn-hover:rgba(100, 100, 255, .45);
+   /* cells */
+   --soil-color:#5E4735;
+   --stone-color:#858585;
+   --wood-color:#4b381b;
+   --leaves-color:#4CAF50;
+   --lava-color:#FC0000;
+   --sky-color:#87A8F7;
+   --cloud-color:#c6cbd6;
+
 }

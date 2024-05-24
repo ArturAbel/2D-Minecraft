@@ -1,48 +1,91 @@
 /* Intro Page */
-#intro-container{
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background-image: url(/assets/images/wallpaper/1.jpg);
-   background-size: cover;
-   overflow: hidden;
+.intro-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/images/wallpaper/1.jpg);
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
 }
 
-#intro-title{
-   font-size: 10rem;
-   font-family: var(--title-font);
-   color: var(--title-text);
-   text-shadow: 0px 5px var(--title-shading), 3px -2px black;
-   letter-spacing: 2px;
-   margin-bottom: 5rem;
+.intro-title {
+  font-size: 10rem;
+  font-family: var(--title-font);
+  color: var(--title-text);
+  text-shadow: 0px 5px var(--title-shading), 3px -2px black;
+  letter-spacing: 2px;
+  margin-bottom: 5rem;
 }
-#intro-main{
-   width: 85rem;
-   height: 20rem;
-   display: flex;
-   justify-content: space-between;
-   gap: 2rem;
-}  
-.intro-buttons{
-   display: flex;
-   flex-direction: column;
-   padding-top: 1.5rem;
-   gap: 1rem;
+
+/* Intro Content*/
+.intro-main {
+  width: 85rem;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
-.instructions{
-   width: 100%;
-   height: 15rem;
-   font-family: var(--text-font);
-   background-color:rgba(51, 51, 51, 0.6);
-   color: white;
-   padding: 1.8rem 2.5rem;
-   font-size: 0.9rem;
-   letter-spacing: 1.5px;
+.intro-buttons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  gap: 1rem;
 }
-.instructions-title{
-   font-size: 1.1rem;
-   font-weight: 600;
+.instructions {
+  width: 100%;
+  height: 15rem;
+  font-family: var(--text-font);
+  background-color: rgba(51, 51, 51, 0.7);
+  color: white;
+  padding: 1.8rem 3rem;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+}
+.instructions-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#game-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.game-toolbar {
+  width: 100%;
+}
+
+.blocks-container {
+  width: 15rem;
+  height: 10rem;
+  background: var(--toolbar-outer);
+  box-shadow: 4px 3px 0px rgba(55, 55, 55, 0.8), inset 2px 3px 0px #fefefe,
+    rgba(14, 30, 37, 0.12) -2px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  position: absolute;
+  bottom: 2rem;
+  right: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset{
+  width: 12rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 5;
+}
+
+/* Hidden (Overwrites)*/
+.hidden {
+  display: none;
 }
