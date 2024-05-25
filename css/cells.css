@@ -1,3 +1,5 @@
+
+/* Main Grid */
 #game-grid {
   width: 100%;
   height: 100%;
@@ -8,7 +10,6 @@
   perspective: 500px;
   gap: 0.4rem;
 }
-
 
 /* Cells */
 .cell {
@@ -27,13 +28,11 @@
   opacity: 0.9;
 }
 
-
-
 /* Grass */
 .grass {
   background-image: url(/assets/images/cells/grass1.png);
 }
-.inner{
+.inner {
   filter: brightness(50%);
   box-shadow: 0 0px 10px -2px rgb(0, 0, 0);
 }
@@ -102,16 +101,20 @@
   filter: brightness(80%);
 }
 
-.sky{
-   background-color: var(--sky-color);
-   box-shadow: 1px 1px 0px var(--sky-color), 2px 2px 0px var(--sky-color),
-   3px 3px 0px var(--sky-color), 4px 4px 0px var(--sky-color),
-   5px 5px 0px var(--sky-color), 6px 6px 0px var(--sky-color);
+
+/* Sky */
+.sky {
+  background-color: var(--sky-color);
+  box-shadow: 1px 1px 0px var(--sky-color), 2px 2px 0px var(--sky-color),
+    3px 3px 0px var(--sky-color), 4px 4px 0px var(--sky-color),
+    5px 5px 0px var(--sky-color), 6px 6px 0px var(--sky-color);
 }
 
-.cloud{
-   background-color: var(--cloud-color);
-   box-shadow: 1px 1px 0px var(--cloud-color), 2px 2px 0px var(--cloud-color),
-   3px 3px 0px var(--cloud-color), 4px 4px 0px var(--cloud-color),
-   5px 5px 0px var(--cloud-color), 6px 6px 0px var(--cloud-color);
+
+/* Cloud */
+.cloud {
+  background-color: var(--cloud-color);
+  box-shadow: 1px 1px 0px var(--cloud-color), 2px 2px 0px var(--cloud-color),
+    3px 3px 0px var(--cloud-color), 4px 4px 0px var(--cloud-color),
+    5px 5px 0px var(--cloud-color), 6px 6px 0px var(--cloud-color);
 }

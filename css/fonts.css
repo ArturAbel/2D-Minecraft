@@ -5,6 +5,7 @@
    src: url('/assets/fonts/minecraftTen.ttf') format('truetype');
 }
 
+/* Text */
 @font-face {
    font-family: 'MinecraftSeven';
    src: url('/assets/fonts/MinecraftSeven.ttf') format('truetype');

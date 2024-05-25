@@ -4,6 +4,7 @@ import {
   introTitle,
   startButton,
   resetButton,
+  quitButton,
 } from "./elements.js";
 
 export class IntroModule {
@@ -12,10 +13,18 @@ export class IntroModule {
     this.introTitle = introTitle;
     this.startButton = startButton;
     this.resetButton = resetButton;
+    this.quitButton = quitButton;
   }
+
+  quit(){
+    this.quitButton.addEventListener('click', () => alert(`Not yet ready!`));
+  }
+
   init() {
     this.startButton.addEventListener("click", () => this.startGame());
   }
+
+
 
   startGame() {
     this.hideIntroContainer();

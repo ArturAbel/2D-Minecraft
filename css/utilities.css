@@ -1,3 +1,5 @@
+
+/* Cursors */
 .sword-cursor{
   cursor: url("/assets/cursor/cursor.cur") 0 0, pointer;
 }
@@ -47,7 +49,6 @@ a:active {
 }
 
 /* Block Holder */
-
 .blocks-holder{
   width: 4.4rem;
   height: 4.4rem;
@@ -67,9 +68,35 @@ a:active {
     inset 1px 1px 0px #ffffff;
 }
 
-
+/* Block Counter */
 .counter{
   font-size: 1.1rem;
   color: black;
   padding-top: 3rem;
+}
+
+/* Spyglass */
+.spyglass-effect {
+  position: absolute;
+  width: 40%;
+  height: 70%;
+  top: 10%;
+  left: 25%;
+  z-index: 5;
+  box-shadow:0 0 0 100rem #2e2e2e;
+  border-radius: 50%;
+  border:5rem solid #8d8d8d;
+}
+
+.glass{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;  
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.48);
 }

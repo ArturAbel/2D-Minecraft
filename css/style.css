@@ -30,12 +30,14 @@
   justify-content: space-between;
   gap: 2rem;
 }
+
 .intro-buttons {
   display: flex;
   flex-direction: column;
   padding-top: 1.5rem;
   gap: 1rem;
 }
+
 .instructions {
   width: 100%;
   height: 15rem;
@@ -46,6 +48,7 @@
   font-size: 0.9rem;
   letter-spacing: 1.5px;
 }
+
 .instructions-title {
   font-size: 1.1rem;
   font-weight: 600;
@@ -77,6 +80,7 @@
   align-items: center;
 }
 
+/* Reset Button */
 .reset{
   width: 12rem;
   position: absolute;
