@@ -1,5 +1,5 @@
 
-import { IntroModule } from './modules/introModule.js';
+import { IntroModule } from './modules/intro.js';
 
 
 document.addEventListener('DOMContentLoaded',() => {

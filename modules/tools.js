@@ -1,6 +1,6 @@
 
-import { tools, axe, pickaxe, shovel, spyglass, gameGrid } from './domElements.js';
-
+import { tools, axe, pickaxe, shovel, spyglass, gameGrid } from './elements.js';
+import { SWORD_CURSOR, AXE_CURSOR, PICKAXE_CURSOR, SHOVEL_CURSOR, SHOVEL, AXE, PICKAXE} from "./constants.js";
 
 export class ToolsModule {
 
@@ -18,6 +18,9 @@ export class ToolsModule {
     this.checkTool();
   }
 
+  checkTool(){
+    return this.currentTool;
+  }
 
   useTool() {
     this.axe.addEventListener("click", () => this.takeAxe());
@@ -31,28 +34,24 @@ export class ToolsModule {
 
   }
 
-  checkTool(){
-    return this.currentTool;
-  }
-
   takeAxe() {
     this.removeSelectedTool()
     this.axe.parentElement.classList.add("selected-tool");
-    this.gameGrid.style.cursor = "url(/assets/cursor/axe.cur) 0 0, pointer";
-    this.currentTool = 'axe';
+    this.gameGrid.style.cursor = AXE_CURSOR;
+    this.currentTool = AXE;
   }
   takePickaxe() {
     this.removeSelectedTool()
     this.pickaxe.parentElement.classList.add("selected-tool");
-    this.gameGrid.style.cursor = "url(/assets/cursor/pickaxe.cur) 0 0, pointer";
-    this.currentTool = 'pickaxe';
+    this.gameGrid.style.cursor = PICKAXE_CURSOR;
+    this.currentTool = PICKAXE;
   }
 
   takeShovel() {
     this.removeSelectedTool()
     this.shovel.parentElement.classList.add("selected-tool");
-    this.gameGrid.style.cursor = "url(/assets/cursor/shovel.cur) 0 0, pointer";
-    this.currentTool = 'shovel';
+    this.gameGrid.style.cursor = SHOVEL_CURSOR;
+    this.currentTool = SHOVEL;
   }
 
   takeSpyglass() {
@@ -64,7 +63,7 @@ export class ToolsModule {
   removeSelectedTool(){
     this.tools.forEach(tool => {
       tool.classList.remove("selected-tool"); 
-      this.gameGrid.style.cursor = "url(/assets/cursor/cursor.cur) 0 0, pointer";
+      this.gameGrid.style.cursor = SWORD_CURSOR;
       this.currentTool = 'none';
     });
   }
