@@ -15,23 +15,29 @@ export class GameModule {
   }
 
 
-  check(){
+  mineCraft(){
     this.cells.forEach(cell => {
       cell.dom.addEventListener('click', () => {
         if (this.tools.checkTool() === SHOVEL && cell.dom.classList.contains('grass') && cell.value < MAX_MINE) {
+
           cell.dom.classList.add('inner');
           grassCounter.textContent++
           cell.value++;
         }
+        
         if (this.tools.checkTool() === AXE && cell.dom.classList.contains('wood')) {
+
           cell.dom.classList.remove('wood');
           cell.dom.classList.add('sky');
           woodCounter.textContent++
         }
+
         if (this.tools.checkTool() === AXE && cell.dom.classList.contains('leaves')) {
+
           cell.dom.classList.remove('leaves');
           cell.dom.classList.add('sky');
         }
+
         if (this.tools.checkTool() === SHOVEL && cell.dom.classList.contains('soil')&& cell.value < MAX_MINE) {
 
           const cellType = this.randomInnerCell(PERCENTAGE);
@@ -42,7 +48,9 @@ export class GameModule {
           soilCounter.textContent++
           cell.value++;
         }
-        if (this.tools.checkTool() === PICKAXE && cell.dom.classList.contains('stone')&& cell.value < MAX_MINE) {
+
+        if (this.tools.checkTool() === PICKAXE && cell.dom.classList.contains('stone')) {
+
           const cellType = this.randomInnerCell(PERCENTAGE);
           cell.dom.classList.remove('stone');
           cell.dom.classList.add(cellType);
@@ -50,7 +58,9 @@ export class GameModule {
           stoneCounter.textContent++
           cell.value++;
         }
+        
         if (this.tools.checkTool() === PICKAXE && cell.dom.classList.contains('gold')&& cell.value < MAX_MINE) {
+
           const cellType = this.randomInnerCell(PERCENTAGE);
           cell.dom.classList.remove('gold');
           cell.dom.classList.add(cellType);
@@ -58,7 +68,9 @@ export class GameModule {
           goldCounter.textContent++
           cell.value++;
         }
+
         if (this.tools.checkTool() === PICKAXE && cell.dom.classList.contains('silver')&& cell.value < MAX_MINE) {
+
           const cellType = this.randomInnerCell(PERCENTAGE);
           cell.dom.classList.remove('silver');
           cell.dom.classList.add(cellType);
@@ -70,7 +82,9 @@ export class GameModule {
     });
   }
 
-  
+
+
+// Giving random number to select a different cell each time you use the shovel
 randomInnerCell(PERCENTAGE){
   let randomCell = '';
   const randomNumber =  Math.floor(Math.random() * PERCENTAGE) + 1; 
@@ -109,7 +123,7 @@ randomInnerCell(PERCENTAGE){
         addSpecialCellClass(cellObj);
       }
     }
-    this.check();
+    this.mineCraft();
   }
 
   // Create an object of cells with dom element, index and value;

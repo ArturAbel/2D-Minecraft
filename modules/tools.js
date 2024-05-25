@@ -1,6 +1,6 @@
 
-import { tools, axe, pickaxe, shovel, spyglass, gameGrid } from './elements.js';
-import { SWORD_CURSOR, AXE_CURSOR, PICKAXE_CURSOR, SHOVEL_CURSOR, SHOVEL, AXE, PICKAXE} from "./constants.js";
+import { tools, axe, pickaxe, shovel, spyglass, gameGrid,spyglassElement } from './elements.js';
+import { SWORD_CURSOR, AXE_CURSOR, PICKAXE_CURSOR, SHOVEL_CURSOR, SHOVEL, AXE, PICKAXE, SPYGLASS} from "./constants.js";
 
 export class ToolsModule {
 
@@ -14,6 +14,7 @@ export class ToolsModule {
     this.shovel = shovel;
     this.spyglass = spyglass;
     this.gameGrid = gameGrid;
+    this.spyglassElement = spyglassElement;
     this.useTool();
     this.checkTool();
   }
@@ -57,13 +58,21 @@ export class ToolsModule {
   takeSpyglass() {
     this.removeSelectedTool()
     this.spyglass.parentElement.classList.add("selected-tool");
-    this.currentTool = 'spyglass';
+
+    this.spyglassElement.classList.remove('hidden');
+
+
+    this.currentTool = SPYGLASS;
   }
 
   removeSelectedTool(){
     this.tools.forEach(tool => {
       tool.classList.remove("selected-tool"); 
       this.gameGrid.style.cursor = SWORD_CURSOR;
+
+      this.spyglassElement.classList.add('hidden');
+
+
       this.currentTool = 'none';
     });
   }

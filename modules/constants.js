@@ -1,7 +1,7 @@
 export const BOARD_SIZE = [29, 14];
 export const IMAGE_COUNT = 5;
 export const PERCENTAGE = 100;
-export const MAX_MINE = 5;
+export const MAX_MINE = 4;
 export const TREE_CELLS = [
   [6, 0],
   [7, 0],
@@ -56,3 +56,4 @@ export const SILVER_CURSOR =
   export const SHOVEL = 'shovel'
   export const AXE = 'axe';
   export const PICKAXE = 'pickaxe';
+  export const SPYGLASS = 'spyglass';

@@ -3,6 +3,7 @@ export const introContainer = document.querySelector(".intro-container");
 export const introTitle = document.querySelector(".intro-title");
 export const startButton = document.querySelector(".start-button");
 export const resetButton = document.querySelector("#reset-button");
+export const quitButton = document.getElementById('quit-button');
 
 // Game
 export const gameGrid = document.getElementById("game-grid");
@@ -14,6 +15,8 @@ export const axe = document.getElementById("axe");
 export const pickaxe = document.getElementById("pickaxe");
 export const shovel = document.getElementById("shovel");
 export const spyglass = document.getElementById("spyglass");
+export const spyglassElement = document.querySelector(".spyglass-effect");
+
 
 // Chest
 export const chest = document.getElementById("chest");
@@ -34,3 +37,4 @@ export const woodCounter = document.querySelector('.wood-counter');
 export const soilCounter = document.querySelector('.soil-counter');
 export const stoneCounter = document.querySelector('.stone-counter');
 export const goldCounter = document.querySelector('.gold-counter');
+export const silverCounter = document.querySelector('.silver-counter');

@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="./css/tools.css">
    <link rel="stylesheet" href="./css/cells.css">
    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/responsive.css">
    <title>2D Minecraft</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
             <div class="intro-buttons">
                <button class="button sword-cursor start-button">Single Player</button>
                <button class="button sword-cursor"><a href="https://minecraft.wiki/">MinecraftWiki</a></button>
-               <button class="button sword-cursor">Quit</button>
+               <button id="quit-button" class="button sword-cursor">Quit</button>
             </div>
             <div class="instructions">
                <p class="instructions-title">Welcome to the 2D World of Minecraft!</p>
@@ -36,6 +37,7 @@
 
    <!-- Game -->
    <section id="game-container">
+      <div class="spyglass-effect hidden"><div class="glass"></div></div>
       <button id="reset-button" class="reset button">Reset Game</button>
       
       <!-- Game Grid -->
