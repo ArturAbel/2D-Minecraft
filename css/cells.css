@@ -31,28 +31,22 @@
 
 /* Grass */
 .grass {
-  background-image: url(/assets/images/cells/grass/grass1.png);
+  background-image: url(/assets/images/cells/grass1.png);
 }
-.inner-grass {
-  background-image: url(/assets/images/cells/grass/grass1.png);
+.inner{
   filter: brightness(50%);
+  box-shadow: 0 0px 10px -2px rgb(0, 0, 0);
 }
-
-
 
 /* Soil */
 .soil {
-  background-image: url(/assets/images/cells/soil/soil1.png);
-}
-.inner-soil {
-  background-image: url(/assets/images/cells/soil/soil1.png);
-  filter: brightness(50%);
+  background-image: url(/assets/images/cells/soil1.png);
 }
 
 
 /* Stone */
 .stone {
-  background-image: url(/assets/images/cells/stone/stone1.png);
+  background-image: url(/assets/images/cells/stone1.png);
   box-shadow: 1px 1px 0px var(--stone-color), 2px 2px 0px var(--stone-color),
     3px 3px 0px var(--stone-color), 4px 4px 0px var(--stone-color),
     5px 5px 0px var(--stone-color), 6px 6px 0px var(--stone-color);
@@ -62,7 +56,7 @@
 
 /* Gold Ore */
 .gold {
-  background-image: url(/assets/images/cells/ore/gold.png);
+  background-image: url(/assets/images/cells/gold.png);
   box-shadow: 1px 1px 0px var(--stone-color), 2px 2px 0px var(--stone-color),
     3px 3px 0px var(--stone-color), 4px 4px 0px var(--stone-color),
     5px 5px 0px var(--stone-color), 6px 6px 0px var(--stone-color);
@@ -72,7 +66,7 @@
 
 /* Silver Ore */
 .silver {
-  background-image: url(/assets/images/cells/ore/silver.png);
+  background-image: url(/assets/images/cells/silver.png);
   box-shadow: 1px 1px 0px var(--stone-color), 2px 2px 0px var(--stone-color),
     3px 3px 0px var(--stone-color), 4px 4px 0px var(--stone-color),
     5px 5px 0px var(--stone-color), 6px 6px 0px var(--stone-color);
@@ -82,7 +76,7 @@
 
 /* Wood */
 .wood {
-  background-image: url(/assets/images/cells/wood/wood.png);
+  background-image: url(/assets/images/cells/wood.png);
   box-shadow: 1px 1px 0px var(--wood-color), 2px 2px 0px var(--wood-color),
     3px 3px 0px var(--wood-color), 4px 4px 0px var(--wood-color),
     5px 5px 0px var(--wood-color), 6px 6px 0px var(--wood-color);
@@ -92,7 +86,7 @@
 
 /* Leaves */
 .leaves {
-  background-image: url(/assets/images/cells/wood/leaves.png);
+  background-image: url(/assets/images/cells/leaves.png);
   box-shadow: 1px 1px 0px var(--leaves-color), 2px 2px 0px var(--leaves-color),
     3px 3px 0px var(--leaves-color), 4px 4px 0px transparent,
     5px 5px 0px transparent, 6px 6px 0px var(--leaves-color);
@@ -101,7 +95,7 @@
 
 /* Lava */
 .lava {
-  background-image: url(/assets/images/cells/lava/Lava_29_JE2_BE1.png);
+  background-image: url(/assets/images/cells/lava.png);
   box-shadow: 1px 1px 0px var(--lava-color), 2px 2px 0px var(--lava-color),
     3px 3px 0px var(--lava-color), 4px 4px 0px var(--lava-color),
     5px 5px 0px var(--lava-color), 6px 6px 0px var(--lava-color);
