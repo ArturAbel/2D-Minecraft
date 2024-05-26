@@ -9,6 +9,7 @@ import {
   silverBlock,
   blocks,
   gameGrid,
+
 } from "./elements.js";
 
 import { GRASS_CURSOR, STONE_CURSOR, SOIL_CURSOR, WOOD_CURSOR,GOLD_CURSOR, SILVER_CURSOR } from "./constants.js";
@@ -65,40 +66,54 @@ export class ChestModule {
   selectBlock() {
     this.blocks.forEach((block) =>
       block.addEventListener("click", () => {
+
         if (block.classList.contains("grass-holder")) {
           this.gameGrid.style.cursor =
           GRASS_CURSOR;
           this.selectedBlock = "grass";
         }
+
         if (block.classList.contains("soil-holder")) {
           this.gameGrid.style.cursor =
           SOIL_CURSOR;
           this.selectedBlock = "soil";
+
         }
+
         if (block.classList.contains("stone-holder")) {
           this.gameGrid.style.cursor =
           STONE_CURSOR;
           this.selectedBlock = "stone";
+
         }
+
         if (block.classList.contains("wood-holder")) {
           this.gameGrid.style.cursor =
           WOOD_CURSOR;
           this.selectedBlock = "wood";
+
         }
+
         if (block.classList.contains("gold-holder")) {
           this.gameGrid.style.cursor =
           GOLD_CURSOR;
           this.selectedBlock = "gold";
+
         }
+
         if (block.classList.contains("silver-holder")) {
           this.gameGrid.style.cursor =
           SILVER_CURSOR;
           this.selectedBlock = "silver";
+
         }
       })
     );
   }
 
+
+
+  // Right mouse click to de-select
   deSelectBlock() {
     window.addEventListener("contextmenu", (e) => {
       e.preventDefault();

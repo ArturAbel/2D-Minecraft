@@ -1,4 +1,5 @@
 import { GameModule } from "./game.js";
+import { QUIT_ALERT } from "./constants.js";
 import {
   introContainer,
   introTitle,
@@ -17,7 +18,7 @@ export class IntroModule {
   }
 
   quit(){
-    this.quitButton.addEventListener('click', () => alert(`Not yet ready!`));
+    this.quitButton.addEventListener('click', () => alert(QUIT_ALERT));
   }
 
   init() {
