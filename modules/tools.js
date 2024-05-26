@@ -35,18 +35,22 @@ export class ToolsModule {
 
   }
 
+  
   takeAxe() {
     this.removeSelectedTool()
     this.axe.parentElement.classList.add("selected-tool");
     this.gameGrid.style.cursor = AXE_CURSOR;
     this.currentTool = AXE;
   }
+
+
   takePickaxe() {
     this.removeSelectedTool()
     this.pickaxe.parentElement.classList.add("selected-tool");
     this.gameGrid.style.cursor = PICKAXE_CURSOR;
     this.currentTool = PICKAXE;
   }
+
 
   takeShovel() {
     this.removeSelectedTool()
@@ -55,24 +59,20 @@ export class ToolsModule {
     this.currentTool = SHOVEL;
   }
 
+
   takeSpyglass() {
     this.removeSelectedTool()
     this.spyglass.parentElement.classList.add("selected-tool");
-
     this.spyglassElement.classList.remove('hidden');
-
-
     this.currentTool = SPYGLASS;
   }
+
 
   removeSelectedTool(){
     this.tools.forEach(tool => {
       tool.classList.remove("selected-tool"); 
       this.gameGrid.style.cursor = SWORD_CURSOR;
-
       this.spyglassElement.classList.add('hidden');
-
-
       this.currentTool = 'none';
     });
   }

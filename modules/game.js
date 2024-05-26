@@ -54,6 +54,7 @@ export class GameModule {
           const cellType = this.randomInnerCell(PERCENTAGE);
           cell.dom.classList.remove('stone');
           cell.dom.classList.add(cellType);
+          cell.dom.classList.add('inner');
           cell.dom.style.backgroundImage = `url(/assets/images/cells/${cellType}.png)`;
           stoneCounter.textContent++
           cell.value++;
@@ -64,6 +65,7 @@ export class GameModule {
           const cellType = this.randomInnerCell(PERCENTAGE);
           cell.dom.classList.remove('gold');
           cell.dom.classList.add(cellType);
+          cell.dom.classList.add('inner');
           cell.dom.style.backgroundImage = `url(/assets/images/cells/${cellType}.png)`;
           goldCounter.textContent++
           cell.value++;
@@ -74,6 +76,7 @@ export class GameModule {
           const cellType = this.randomInnerCell(PERCENTAGE);
           cell.dom.classList.remove('silver');
           cell.dom.classList.add(cellType);
+          cell.dom.classList.add('inner');
           cell.dom.style.backgroundImage = `url(/assets/images/cells/${cellType}.png)`;
           silverCounter.textContent++
           cell.value++;
@@ -81,6 +84,7 @@ export class GameModule {
       });
     });
   }
+
 
 
 

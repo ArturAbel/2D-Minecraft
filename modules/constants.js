@@ -1,3 +1,4 @@
+export const QUIT_ALERT = "Not yet ready!";
 export const BOARD_SIZE = [29, 14];
 export const IMAGE_COUNT = 5;
 export const PERCENTAGE = 100;
@@ -52,8 +53,7 @@ export const GOLD_CURSOR = "url(/assets/cursor/blocks/gold.cur) 0 0, pointer";
 export const SILVER_CURSOR =
   "url(/assets/cursor/blocks/silver.cur) 0 0, pointer";
 
-
-  export const SHOVEL = 'shovel'
-  export const AXE = 'axe';
-  export const PICKAXE = 'pickaxe';
-  export const SPYGLASS = 'spyglass';
+export const SHOVEL = "shovel";
+export const AXE = "axe";
+export const PICKAXE = "pickaxe";
+export const SPYGLASS = "spyglass";
